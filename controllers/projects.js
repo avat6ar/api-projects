@@ -13,7 +13,7 @@ export const getProject = (request, response) => {
   if (project) {
     response.json(project);
   } else {
-    response.send("student not found");
+    response.send("Project not found");
   }
 };
 
@@ -54,7 +54,7 @@ export const updateProject = (request, response) => {
   if (link) {
     project.link = link;
   }
-  response.send(`Student with id ${id} has been updated`);
+  response.send(`Project with id ${id} has been updated`);
 };
 
 export const errHandler = (err, requset, response, next) => {
